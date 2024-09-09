@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Relatórios</h2>
+
+<h3>Produtos com Estoque Baixo:</h3>
+<ul>
+    {% for product in low_stock %}
+        <li>Nome: {{ product[0] }}, Quantidade: {{ product[1] }}</li>
+    {% endfor %}
+</ul>
+
+<h3>Produtos com Excesso de Estoque:</h3>
+<ul>
+    {% for product in high_stock %}
+        <li>Nome: {{ product[0] }}, Quantidade: {{ product[1] }}</li>
+    {% endfor %}
+</ul>
+
+<h3>Todos os Produtos:</h3>
+<ul>
+    {% for product in all_products %}
+        <li>Nome: {{ product[0] }}, Quantidade: {{ product[1] }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Rastrear Localização</h2>
+<form method="post">
+    <div class="form-group">
+        <label for="product_id">ID do Produto:</label>
+        <input type="number" class="form-control" id="product_id" name="product_id" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Rastrear Localização</button>
+</form>
+
+{% if location %}
+<div class="alert alert-info mt-3">
+    <strong>Localização:</strong> {{ location }}
+</div>
+{% endif %}
+{% endblock %}
