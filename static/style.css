@@ -1,27 +1,52 @@
+/* Cor de fundo geral */
 body {
-    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background:  #f7e7a57d;
+    background-size: cover;
+    color: #6F4F28; /* Marrom para o texto */
 }
 
+/* Estilo do cabeçalho */
 header {
-    background-color: #f4f4f4;
-    padding: 10px;
-    text-align: center;
+    background-color: #F0C300; /* Mostarda para o cabeçalho */
 }
 
-nav a {
-    margin: 0 10px;
-    text-decoration: none;
-    color: #333;
+/* Estilo da navegação */
+.navbar {
+    background-color: #F7E7A5; /* Amarelo claro para a barra de navegação */
 }
 
-main {
-    padding: 20px;
+.navbar-brand,
+.nav-link {
+    color: #6F4F28; /* Marrom para o texto da navegação */
 }
 
-form {
-    margin: 20px 0;
+/* Estilo do jumbotron */
+.jumbotron {
+    background: rgba(255, 255, 255, 0.057); /* Fundo branco semi-transparente para melhorar a legibilidade */
+    color: #6F4F28; /* Marrom para o texto do jumbotron */
+    padding: 2rem;
+    border-radius: 0.5rem;
 }
 
-input[type="text"], input[type="number"], input[type="submit"] {
-    margin: 5px 0;
+/* Estilo dos botões */
+.btn-primary {
+    background-color: #F0C300; /* Mostarda para os botões primários */
+    border-color: #F0C300; /* Mostarda para a borda dos botões primários */
+}
+
+.btn-primary:hover {
+    background-color: #F7E7A5; /* Amarelo claro para o hover dos botões primários */
+    border-color: #F7E7A5; /* Amarelo claro para a borda no hover dos botões primários */
+}
+
+/* Formulários */
+.form-control {
+    border-color: #6F4F28; /* Marrom para a borda dos campos de formulário */
+}
+
+.form-control:focus {
+    border-color: #F0C300; /* Mostarda para a borda no foco dos campos de formulário */
+    box-shadow: 0 0 0 0.2rem rgba(240, 195, 0, 0.25); /* Mostarda para a sombra no foco */
 }
