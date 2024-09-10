@@ -1,7 +1,11 @@
 {% extends 'base.html' %}
 {% block content %}
-<h2>Adicionar Novo Produto</h2>
-<form method="post">
+<h2>Adicionar Produto</h2>
+<form method="POST" action="{{ url_for('add_product_route') }}">
+    <div class="form-group">
+        <label for="id">ID (se aplicável, para edições):</label>
+        <input type="text" class="form-control" id="id" name="id">
+    </div>
     <div class="form-group">
         <label for="name">Nome:</label>
         <input type="text" class="form-control" id="name" name="name" required>
@@ -16,7 +20,7 @@
     </div>
     <div class="form-group">
         <label for="price">Preço:</label>
-        <input type="number" class="form-control" id="price" name="price" step="0.01" required>
+        <input type="number" step="0.01" class="form-control" id="price" name="price" required>
     </div>
     <div class="form-group">
         <label for="location">Localização:</label>
