@@ -1,5 +1,7 @@
 import sqlite3
 
+from database import get_db_connection
+
 def add_product(name, category, quantity, price, location):
     conn = sqlite3.connect('inventory.db')
     cursor = conn.cursor()
